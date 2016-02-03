@@ -21,6 +21,11 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
     private int mLayoutId;
     private List<Album> mAlbums;
 
+    public AlbumAdapter(Context mContext, int mLayoutId, List<Album> mAlbums) {
+        this.mContext = mContext;
+        this.mLayoutId = mLayoutId;
+        this.mAlbums = mAlbums;
+    }
 
     @Override
     public AlbumAdapter.AlbumViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
